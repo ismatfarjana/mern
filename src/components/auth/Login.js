@@ -122,3 +122,5 @@ const mapStateToProps = state => ({
   errors: state.errors
 });
 export default connect(mapStateToProps, { loginUser })(Login);
+
+//Right now, when the user logs in, the app redirects us back to a blank page "/dashboard" per the first conditional statement of our componentWillReceiveProps(nextProps) lifecycle method
